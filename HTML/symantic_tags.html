@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="symantic_tags.css">
+  </head>
+  <body>
+    <!-- article은 독립적이고 홀로 설 수 있는 내용을 담음 -->
+    <article class="forecast">
+        <h1>Weather forecast for Seattle</h1>
+        <article class="day-forecast">
+            <h2>03 March 2018</h2>
+            <p>Rain.</p>
+        </article>
+        <article class="day-forecast">
+            <h2>04 March 2018</h2>
+            <p>Periods of rain.</p>
+        </article>
+        <article class="day-forecast">
+            <h2>05 March 2018</h2>
+            <p>Heavy rain.</p>
+        </article>
+    </article>
+
+    <!-- aside는 주 내용이 아닌 주변내용을 담음 -->
+    <p>Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both larval and adult forms.</p>
+    <aside>
+        <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+    </aside>
+    <p>Several species of salamander inhabit the temperate rainforest of the Pacific Northwest, including the Ensatina, the Northwestern Salamander and the Rough-skinned Newt. Most salamanders are nocturnal, and hunt for insects, worms and other small creatures.</p>
+
+    <!-- figure은 미디어를 담는 컨테이너 역할 -->
+    <!-- figcaption은 미디어에 대한 설명을 담는 역할 -->
+    <figure>
+      <img src="monkey.png" alt="monkey icon">
+      <figcaption>귀여운 원숭이 아이콘</figcaption>
+    </figure>
+
+    <!-- footer는 article에 대한 꼬릿말로 article에 대한 정보를 포함-->
+    <!-- 하나의 article에 여러개의 footer가 있을수도 있음 -->
+    <article>
+        <h1>How to be a wizard</h1>
+        <ol>
+            <li>Grow a long, majestic beard.</li>
+            <li>Wear a tall, pointed hat.</li>
+            <li>Have I mentioned the beard?</li>
+        </ol>
+        <footer>
+            <p>© 2018 Gandalf</p>
+        </footer>
+    </article>
+
+    <br>
+    <!-- main은 문서의 주요한 내용을 담는 태그 -->
+    <!-- header는 네비게이션이나 페이지에 대한 정보를 담는 태그 -->
+    <!-- 보통 제목요소, 사이트 로고, 저작권 정보를 포함한다 -->
+    <header class="page-header">
+        <h1>Cute Puppies Express!</h1>
+    </header>
+    <main>
+        <p>I love beagles <em>so</em> much! Like, really, a lot. They’re adorable and their ears are so, so snuggly soft!</p>
+    </main>
+
+
+    <!-- mark는 텍스트를 강조하고자 할 때 사용 -->
+    <p>Search results for "salamander":</p>
+    <hr>
+    <p>Several species of <mark>salamander</mark> inhabit the temperate rainforest of the Pacific Northwest.</p>
+
+    <!-- nav 태그는 사이트에서 네비게이션 역할을 하는 링크 그룹을 담음 -->
+    <!-- screen reader를 사용하는 사용자가 네비게이션을 쉽게 찾을수 있음 -->
+    <!-- header나 article에 사용될 수 있음 -->
+    <nav class="crumbs">
+        <ol>
+            <li class="crumb"><a href="bikes">Bikes</a></li>
+            <li class="crumb"><a href="bikes/bmx">BMX</a></li>
+            <li class="crumb">Jump Bike 3000</li>
+        </ol>
+    </nav>
+
+    <!-- time 태그는 날짜나 시간 표현을 컴퓨터가 인식할 수 있도록 사용됨 -->
+    <!-- 기간을 표시할때는 P로 시작하고 P7DT12H와 같이 표현한다.-->
+    <h1>Jump Bike 3000</h1>
+    <p>This BMX bike is a solid step into the pro world. It looks as legit as it rides and is built to polish your skills.</p>
+    <p>The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's Hyde Park.</p>
+    <p>The concert starts at <time datetime="20:00">20:00</time> and you'll be able to enjoy the band for at least <time datetime="PT2H30M">2h 30m</time>.</p>
+  </body>
+</html>

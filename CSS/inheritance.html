@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      h1{
+        color: gray;
+      }
+      * { color: red; }
+      h1#page { color: blue; }
+    </style>
+  </head>
+  <body>
+    <!-- 스타일은 대부분 자손 태그에 상속된다. -->
+    <h1>Hello, <em>HTML</em></h1>
+    
+    <!-- 상속되는 스타일은 * 보다도 낮은 구체성을 가진다. -->
+    <h1 id="page">Hello, <em>CSS</em></h1>
+
+  </body>
+</html>

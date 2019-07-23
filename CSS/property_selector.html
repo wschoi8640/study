@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      p[class] { color: silver; }
+      p[class][id] { color: gold; }
+
+      div[class="myFoo"] { color: red; }
+      div[id="myBar"] { color: green; }
+      div[class="myFoo"][id="myBar"] { color: blue; }
+    </style>
+  </head>
+  <body>
+    <p class="foo">Hello</p>
+    <p class="foo" id="bar">HTML</p>
+
+    <div class="myFoo">Hello</div>
+    <div id="myBar">My Name is</div>
+    <div class="myFoo" id="myBar">CSS</div>
+  </body>
+</html>
