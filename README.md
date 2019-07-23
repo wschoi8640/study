@@ -225,3 +225,5 @@
 * 마진 병합 : 인접한 형제 요소간에, 부모요소와 첫째, 막내 요소간에 마진이 큰 쪽으로 병합이 일어나는 현상 (경계에 인라인 요소가 삽입 되면 마진 병합이 일어나지 않는다.)
 
 * visibility : collapse 를 쓰면 hidden처럼 화면에 노출되지 않고 요소가 차지하는 공간도 없어짐
+
+* 말줄임 css  overflow = hidden,text-overflow = ellipsis, white-space: nowrap;
