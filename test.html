@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+  .container {
+    display: inline-block;
+    background-color: aquamarine;
+  }
+  .container::after {
+    display: block;
+    clear:both;
+    content:'';
+  }
+  .radio1 {
+    float:left;
+  }
+  .radio1_label {
+    float:left;
+  }
+  .radio2 {
+    margin-top: 14px;
+    clear:left;
+    float:left;
+  }
+  .radio2_label {
+    margin-top: 10px;
+    float:left;
+  }
+  </style>
+</head>
+<body>
+<div class="container">
+  <input type="radio" id="radio1" class="radio1" name="radio"><label for="radio1" class="radio1_label">radio1</label>
+  <input type="radio" id="radio2" class="radio2" name="radio"><label for="radio2" class="radio2_label">radio2</label>
+</div>
+<div class="container">
+  <textarea name="" id="" cols="10" rows="3"></textarea>
+</div>
+<div class="container">
+  <textarea name="" id="" cols="10" rows="3"></textarea>
+</div>
+</body>
+</html>
