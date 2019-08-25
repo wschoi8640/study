@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>최종평가 정리</title>
+  <link rel="stylesheet" href="final_exam.css">
+</head>
+<body>
+<h1 class="title_document">Final Exam 예상 출제 문제</h1>
+<div class="area_h2 open">
+  <h2 class="area_h2_title">1. 마진, 너비값 계산하기</h2>
+  <div class="area_h3">1. 마진 병합
+      (1) 붙어있는 형제요소끼리 마진 병합 발생
+      (2) 부모와 인접한 자식요소
+      (3) 형제요소가 내용이 없는 빈요소인 경우
+    2. 마진 병합 회피
+      - 부모에 inline-block, padding, border, float, overflow, absolute 설정
+  </div>
+</div>
+<div class="area_h2">
+  <h2 class="area_h2_title">2. 클래스 적용 계산하기</h2>
+  <div class="area_h3">1. css 선택자 구체성이 높을수록 우선순위가 높아짐(형제 선택자 제외)
+  </div>
+</div>
+<div class="area_h2">
+  <h2 class="area_h2_title">3. 리스트나 테이블 HTML 짜기</h2>
+</div>
+<div class="area_h2">
+  <h2 class="area_h2_title">4. 시맨틱 태그 빈칸 채우기</h2>
+</div>
+<div class="area_h2 open">
+  <h2 class="area_h2_title">5. 태그 특징 정리</h2>
+  <div class="area_h3">1. a 태그
+    (1) 블록 요소를 자식 요소로 가질 수 있다.
+    (2) a 태그를 부모 요소로 가질 수 없다.
+    2. ol 태그
+    (1) start 속성 : 시작 index를 설정해줌
+    (2) reversed : index가 역순으로 붙음
+    3. li 태그
+    (1) 종료 태그를 필요로 하지 않음
+    (2) value 속성 : 현재 항목의 index값을 설정, 이어지는 li의 index에도 영향을 줌
+    4. table 태그
+    (1) tfoot 태그는 필수가 아님
+    (2) 최소한 하나의 tr 태그는 있어야 함
+    (3) thead, tbody, tfoot 순서로 와야함
+    5. colgroup 태그
+    (1) 시작태그와 종료태그 생략 가능
+    (2) 종료 태그만 생략 할 수 도 있음
+    6. thead 태그
+    (1) tbody나 tfoot태그가 뒤따르면 종료 태그 생략 가능
+    7. tfoot 태그
+    (1) 종료태그 생략 가능
+    8. tr,td,th 태그
+    (1) 종료태그 생략 가능
+    9. 헤딩태그
+    (1) 블록 요소를 자식요소로 가질 수 없음
+    10. em
+    (1) 문장의 의미를 바꿀때 사용 (강세)
+    11. strong
+    (1) content에서 가장 중요한 부분에 사용
+    12. meta
+    (1) 빈태그 이므로 자식요소 없어야 함
+    (2) 종료 태그 없음
+    13. html, head, body
+    (1) 주석이 뒤따라 오지 않는다면 시작 태그, 종료 태그를 생략할 수 있음
+    14. title
+    (1) title 을 쓰지 않으면 브라우저가 페이지의 나머지 부분을 무시함
+    15. p
+    (1) 블록 요소를 자식요소로 가질 수 없다.
+    (2) 부모가 a 태그가 아니고 섹셔닝 요소가 이어지는 경우 종료 태그를 생략할 수 있음
+  </div>
+</div>
+<div class="area_h2 open">
+  <h2 class="area_h2_title">6. 상속되는 css 속성</h2>
+  <div class="area_h3">1. border-collapse: border 합치기 (table만 사용가능)
+    2. border-spacing: 셀 사이의 간격 (table만 사용가능)
+    3. color
+    4. cursor
+    5. font
+    6. letter-spacing
+    7. list-style
+    8. text-align
+    9. white-space
+    10. word-spacing
+  </div>
+</div>
+<div class="area_h2 open">
+  <h2 class="area_h2_title">7. 축약형 속성</h2>
+  <div class="area_h3">1. font: [style] [variant] [weight] [size/line-height] [family]
+      (1) font-style: normal, italic, oblique(기울어짐꼴)
+      (2) font-variant: normal, small-caps
+    2. background: [color] [image] [repeat] [attachment] [position/size]
+      (1) background-attachment: scroll(요소와 함께 움직임, 스크롤시 배경은 스크롤 안됨), fixed(움직이지 않음), local(요소와 함께 움직임, 스크롤시 배경 이미지도 스크롤)
+    3. list-style: [type] [position] [image]
+      (1) list-style-type: disc(검정원), circle(빈원)
+      (2) list-style-position: inside(요소 영역에 포함), outside(요소 영역에 비포함)
+      (3) list-style-image: url(), none;
+  </div>
+</div>
+<div class="area_h2 open">
+  <h2 class="area_h2_title">8. HTML 태그 속성</h2>
+  <div class="area_h3">
+    <table>
+      <colgroup>
+        <col style="width: 20%">
+        <col style="width: 40%">
+        <col style="width: 40%">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>속성 이름</th>
+          <th>요소</th>
+          <th>설명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>alt</th>
+          <td>img, input(type=image인 경우)</td>
+          <td>이미지를 표시할 수 없는 경우 표시할 대체 문구입니다.</td>
+        </tr>
+        <tr>
+          <th>readonly</th>
+          <td>input, textarea</td>
+          <td>요소가 수정될 수 있는지를 나타냅니다.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="area_h2">
+  <h2 class="area_h2_title">9. 요구사항대로 레이아웃 짜기</h2>
+</div>
+<div class="area_h2 open">
+  <h2 class="area_h2_title">10. 깃 명령어 빈칸채우기</h2>
+  <div class="area_h3">1. git remote add origin <저장소 url>
+  2. git branch -d <삭제할 브랜치> : 삭제할 브랜치가 현재 브랜치에 합쳐졌을 경우
+  3. git branch -D <삭제할 브랜치> : 삭제할 브랜치가 현재 브랜치에 합쳐지지 않아도 가능
+  4. git diff <시작지점> <끝지점> : 두 지점의 차이를 보여줌
+  5. git merge <브랜치 이름> : 현재 브랜치에 해당 브랜치를 병합
+  6. git reset --hard <커밋주소> : 돌아가려는 이력이후의 모든 내용을 지워 버림
+  7. git reset --soft <커밋주소> : 돌아가려는 이력이후의 커밋을 취소, 바로 다시 커밋 가능
+  8. git reset --mixed <커밋주소> : 돌아가려는 이력이후의 add를 취소, add 가능한 상태
+  9. git reset <옵션> HEAD~<숫자> : 현재 위치에서 상대적인 위치만큼 reset 가능
+  10. git revert <커밋주소> : 해당 주소의 커밋을 삭제, revert 기록과 해당 커밋 기록은 log에 남음
+  </div>
+</div>
+<div class="area_h2 open">
+  <h2 class="area_h2_title">11. 리더기가 못 읽는 스타일</h2>
+  <div class="area_h3">1. visibility: hidden
+    2. display: none
+    3. font-size: 0
+    4. width: 0
+    5. height: 0
+    6. opacity: 0
+  </div>
+</div>
+<div class="area_h2 open">
+  <h2 class="area_h2_title">12. 기타 암기</h2>
+  <div class="area_h3">1. 미디어 쿼리 세로모드 : @media screen and (orientation:portrait)
+    2. 미디어 쿼리 가로모드 : @media screen and (orientation:landscape)
+    3. table 에서 td에 바로 absolute 주지 말고 div 하나 내려서 주기
+  </div>
+</div>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="final_exam.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+html,body,h2 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
+  color: #333;
+}
+h2 {
+  font-weight: normal;
+}
+.title_document {
+  text-align: center;
+}
+.area_h2 {
+  padding: 10px;
+  border-top: 1px solid #c1c1c1;
+}
+.area_h2.open .area_h2_title::after {
+  display: inline-block;
+  margin-left: 30px;
+  color: salmon;
+  content: '자세히보기';
+}
+.area_h3 {
+  display: none;
+  white-space: pre-line;
+  margin-top: 10px;
+  padding: 0 20px;
+  line-height: 25px;
+  border: 1px solid #c1c1c1;
+  border-width: 1px 0 1px 0;
+  background-color: #eee;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th,td {
+  padding: 0 10px;
+  border: 1px solid #888;
+}
+tbody th {
+  font-weight: normal;
+}
+thead {
+  background-color: #ccc;
+}
